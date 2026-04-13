@@ -8,7 +8,7 @@ export default async function PricingPage() {
   return (
     <main className="min-h-screen bg-[linear-gradient(180deg,#FFE5FF_0%,#FAFDFF_42%,#FFFFFF_100%)] text-[#303940]">
       <section className="border-b border-[#9c9c9c]/30 bg-[#303940] text-[#FAFDFF]">
-        <div className="mx-auto flex align-center max-w-7xl flex-col gap-8 px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:gap-10 lg:py-20">
+        <div className="mx-auto flex items-center max-w-7xl flex-col gap-8 px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:gap-10 lg:py-20">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-lg font-semibold text-center tracking-tight">
               Know what you need?.
