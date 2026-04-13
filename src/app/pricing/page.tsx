@@ -8,27 +8,16 @@ export default async function PricingPage() {
   return (
     <main className="min-h-screen bg-[linear-gradient(180deg,#FFE5FF_0%,#FAFDFF_42%,#FFFFFF_100%)] text-[#303940]">
       <section className="border-b border-[#9c9c9c]/30 bg-[#303940] text-[#FAFDFF]">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:gap-10 lg:py-20">
+        <div className="mx-auto flex align-center max-w-7xl flex-col gap-8 px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:gap-10 lg:py-20">
           <div className="max-w-3xl space-y-6">
-            <h1 className="text-lg font-semibold text-center tracking-tight sm:text-4xl lg:text-5xl">
+            <h1 className="text-lg font-semibold text-center tracking-tight">
               Know what you need?.
             </h1>
-            <p className="text-3xl uppercase text-center tracking-[0.3em] text-[#FFE5FF] sm:text-sm sm:tracking-[0.35em]">Pricing Plans</p>
+            <p className="text-3xl uppercase text-center tracking-[0.3em] text-[#FFE5FF] sm:tracking-[0.35em]">Pricing Plans</p>
             <p className="max-w-2xl text-sm leading-7 text-center text-[#FAFDFF]/78 sm:text-base lg:text-lg">
               Simplicity is at the heart of our business - every plan is set up to fit your need and budget
 giving you the maximum satisfaction you deserve.
             </p>
-          </div>
-
-          <div className="grid gap-3 md:grid-cols-3 md:gap-4">
-            {highlights.map((highlight) => (
-              <div
-                key={highlight}
-                className="rounded-[1.5rem] border border-white/10 bg-white/8 px-4 py-4 text-sm text-[#FAFDFF] backdrop-blur sm:rounded-3xl sm:px-5"
-              >
-                {highlight}
-              </div>
-            ))}
           </div>
         </div>
       </section>
