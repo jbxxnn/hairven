@@ -9,11 +9,11 @@ export default async function PricingPage() {
     <main className="min-h-screen bg-[linear-gradient(180deg,#FFE5FF_0%,#FAFDFF_42%,#FFFFFF_100%)] text-[#303940]">
       <section className="border-b border-[#9c9c9c]/30 bg-[#303940] text-[#FAFDFF]">
         <div className="mx-auto flex items-center max-w-7xl flex-col gap-8 px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:gap-10 lg:py-20">
-          <div className="max-w-3xl space-y-6">
+          <div className="max-w-3xl">
             <h1 className="text-lg font-semibold text-center tracking-tight">
               Know what you need?.
             </h1>
-            <p className="text-3xl uppercase text-center tracking-[0.3em] text-[#FFE5FF] sm:tracking-[0.35em]">Pricing Plans</p>
+            <p className="text-5xl mt-2 uppercase text-center tracking-[0.3em] text-[#FFE5FF] sm:tracking-[0.35em]">Pricing Plans</p>
             <p className="max-w-2xl text-sm leading-7 text-center text-[#FAFDFF]/78 sm:text-base lg:text-lg">
               Simplicity is at the heart of our business - every plan is set up to fit your need and budget
 giving you the maximum satisfaction you deserve.
