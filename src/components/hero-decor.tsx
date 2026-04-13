@@ -26,24 +26,24 @@ export function HeroDecor() {
   );
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {/* Top Left */}
-      <div className="absolute -top-12 -left-12 rotate-[15deg] scale-150 opacity-40">
+    <div className="absolute inset-0 pointer-events-none">
+      {/* Top Left - Overlapping with Marquee */}
+      <div className="absolute -top-16 -left-12 rotate-[15deg] scale-[1.3] opacity-100">
         <SvgPath />
       </div>
       
-      {/* Top Right */}
-      <div className="absolute top-1/4 -right-16 -rotate-[45deg] scale-125 opacity-30">
+      {/* Top Right - Bleeding out top */}
+      <div className="absolute -top-24 -right-16 -rotate-[45deg] scale-150 opacity-100">
         <SvgPath />
       </div>
 
-      {/* Center Bottom (Partially cut) */}
-      <div className="absolute -bottom-24 left-1/3 rotate-[110deg] scale-[2.2] opacity-20">
+      {/* Center Bottom (Partially cut/bleeding into pricing) */}
+      <div className="absolute -bottom-32 left-1/4 rotate-[110deg] scale-[1.5] opacity-100">
         <SvgPath />
       </div>
 
-      {/* Far Right Bottom */}
-      <div className="absolute bottom-1/2 -right-20 rotate-[180deg] scale-110 opacity-25">
+      {/* Far Right Bottom - Overlapping pricing section */}
+      <div className="absolute -bottom-20 -right-24 rotate-[180deg] scale-125 opacity-100">
         <SvgPath />
       </div>
     </div>

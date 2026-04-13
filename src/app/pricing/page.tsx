@@ -8,15 +8,15 @@ export default async function PricingPage() {
   const { highlights, sections } = await readPricingDatasetSafely();
 
   return (
-    <main className="min-h-screen bg-[linear-gradient(180deg,#FFE5FF_0%,#FAFDFF_42%,#FFFFFF_100%)] text-[#303940]">
+    <main className="min-h-screen overflow-x-clip bg-[linear-gradient(180deg,#FFE5FF_0%,#FAFDFF_42%,#FFFFFF_100%)] text-[#303940]">
       <Marquee />
-      <section className="relative overflow-hidden border-b border-[#9c9c9c]/30 bg-[#303940] text-[#FAFDFF]">
+      <section className="relative border-b border-[#9c9c9c]/30 bg-[#303940] text-[#FAFDFF] min-h-[55vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <HeroDecor />
         </div>
         <div className="relative z-10 mx-auto flex items-center max-w-7xl flex-col gap-8 px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:gap-10 lg:py-20">
           <div className="max-w-3xl">
-            <h1 className="text-lg font-semibold text-center tracking-tight">
+            <h1 className="text-lg font-normal italic text-center tracking-tight mb-8">
               Know what you need?.
             </h1>
             <p className="text-5xl mt-2 uppercase text-center tracking-[0.3em] text-[#FFE5FF] sm:tracking-[0.35em]">Pricing Plans</p>
@@ -87,14 +87,14 @@ giving you the maximum satisfaction you deserve.
           });
 
           return (
-            <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-6 sm:gap-6 md:grid-cols-3">
               {columns.map((columnSections, colIdx) => (
-                <div key={colIdx} className="flex flex-col gap-4 sm:gap-6">
+                <div key={colIdx} className="flex flex-col gap-6 sm:gap-6">
                   {columnSections.map((section) => (
                     <section
                       key={section.id}
                       id={section.id}
-                      className="scroll-mt-24 border-2 border-[#000000] bg-[#FFFFFF] p-0 shadow-[0_24px_80px_-48px_rgba(48,57,64,0.22)] sm:scroll-mt-28"
+                      className="scroll-mt-24 border-2 border-[#000000] bg-[#FFFFFF] p-0 pb-4 shadow-[0_24px_80px_-48px_rgba(48,57,64,0.22)] sm:scroll-mt-28"
                     >
                       <div
                         className="mb-5 p-8 space-y-3 sm:mb-6 border-b border-[#000000] border-b-2"
@@ -121,7 +121,7 @@ giving you the maximum satisfaction you deserve.
                                 <h4 className="truncate font-helvetica text-base font-medium text-[#000000]">
                                   {item.name}
                                 </h4>
-                                <div className="hidden flex-1 min-w-[12px] border-b border-dashed border-[#000000]/20 mb-[4px] sm:block" />
+                                <div className="hidden flex-1 min-w-[12px] border-b border-dashed border-[#000000]/20 mb-[4px]" />
                               </div>
                               <p className="shrink-0 text-base font-medium text-[#000000] whitespace-nowrap">
                                 {item.price}
@@ -138,25 +138,25 @@ giving you the maximum satisfaction you deserve.
                       {section.id === "male" && footerItem && (
                         <div
                           className="mt-6 border-t border-[#000000]/10 p-6 pt-5"
-                          style={{ backgroundColor: section.backgroundColor ?? "#000000" }}
+                          style={{ backgroundColor: section.backgroundColor ?? "#FFFFFF" }}
                         >
                           <div className="space-y-1">
                         <div className="flex items-baseline gap-2 sm:gap-4">
                           <div className="flex flex-1 items-baseline gap-2 min-w-0">
                             <h4
                               className="truncate font-helvetica text-base font-medium"
-                              style={{ color: section.textColor ?? "#FFFFFF" }}
+                              style={{ color: section.textColor ?? "#000000" }}
                             >
                               {footerItem.name}
                             </h4>
                             <div
                               className="hidden flex-1 min-w-[12px] border-b border-dashed mb-[4px] opacity-40 sm:block"
-                              style={{ borderColor: section.textColor ?? "#FFFFFF" }}
+                              style={{ borderColor: section.textColor ?? "#000000" }}
                             />
                           </div>
                           <p
                             className="shrink-0 text-base font-medium whitespace-nowrap"
-                            style={{ color: section.textColor ?? "#FFFFFF" }}
+                            style={{ color: section.textColor ?? "#000000" }}
                           >
                             {footerItem.price}
                           </p>
@@ -164,7 +164,7 @@ giving you the maximum satisfaction you deserve.
                             {footerItem.note ? (
                               <p
                                 className="text-sm leading-6 opacity-80"
-                                style={{ color: section.textColor ?? "#FFFFFF" }}
+                                style={{ color: section.textColor ?? "#000000" }}
                               >
                                 {footerItem.note}
                               </p>
