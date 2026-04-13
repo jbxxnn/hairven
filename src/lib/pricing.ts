@@ -11,6 +11,8 @@ export type PricingSection = {
   title: string;
   eyebrow: string;
   description: string;
+  backgroundColor?: string;
+  textColor?: string;
   items: PricingItem[];
 };
 
@@ -26,6 +28,8 @@ export const createEmptySection = (): PricingSection => ({
   title: "New Section",
   eyebrow: "Category",
   description: "Add a short description for this section.",
+  backgroundColor: "#000000",
+  textColor: "#FFFFFF",
   items: [{ name: "New service", price: "₦0", note: "" }],
 });
 

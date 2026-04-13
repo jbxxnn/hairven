@@ -65,6 +65,8 @@ function parseSections(rows: string[][] | undefined): PricingSection[] {
       title: row[2] ?? "",
       eyebrow: row[3] ?? "",
       description: row[4] ?? "",
+      backgroundColor: row[5] ?? "#000000",
+      textColor: row[6] ?? "#FFFFFF",
     }))
     .filter((section) => section.id && section.title)
     .sort((a, b) => a.order - b.order)
@@ -154,7 +156,7 @@ export async function readPricingDataset(): Promise<PricingDataset> {
     spreadsheetId,
     ranges: [
       `${HIGHLIGHTS_SHEET}!A:B`,
-      `${SECTIONS_SHEET}!A:E`,
+      `${SECTIONS_SHEET}!A:G`,
       `${ITEMS_SHEET}!A:E`,
     ],
   });
@@ -202,15 +204,17 @@ export async function writePricingDataset(dataset: PricingDataset): Promise<void
           ],
         },
         {
-          range: `${SECTIONS_SHEET}!A:E`,
+          range: `${SECTIONS_SHEET}!A:G`,
           values: [
-            ["order", "id", "title", "eyebrow", "description"],
+            ["order", "id", "title", "eyebrow", "description", "backgroundColor", "textColor"],
             ...dataset.sections.map((section, index) => [
               String(index + 1),
               section.id,
               section.title,
               section.eyebrow,
               section.description,
+              section.backgroundColor ?? "#000000",
+              section.textColor ?? "#FFFFFF",
             ]),
           ],
         },
@@ -257,6 +261,8 @@ export function isPricingDataset(value: unknown): value is PricingDataset {
         typeof nextSection.title === "string" &&
         typeof nextSection.eyebrow === "string" &&
         typeof nextSection.description === "string" &&
+        (nextSection.backgroundColor === undefined || typeof nextSection.backgroundColor === "string") &&
+        (nextSection.textColor === undefined || typeof nextSection.textColor === "string") &&
         Array.isArray(nextSection.items) &&
         nextSection.items.every((item) =>
           item &&

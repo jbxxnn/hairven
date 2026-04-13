@@ -70,7 +70,7 @@ export default function PricingManageClient() {
 
   const updateSectionField = (
     index: number,
-    field: "id" | "title" | "eyebrow" | "description",
+    field: "id" | "title" | "eyebrow" | "description" | "backgroundColor" | "textColor",
     value: string
   ) => {
     setDataset((current) => {
@@ -356,6 +356,28 @@ export default function PricingManageClient() {
                       updateSectionField(selectedIndex, "description", event.target.value)
                     }
                     rows={3}
+                    className="w-full rounded-2xl border border-[#9c9c9c]/25 bg-[#FAFDFF] px-4 py-3 outline-none transition focus:border-[#303940]"
+                  />
+                </label>
+                <label className="space-y-2">
+                  <span className="text-sm font-semibold">Background color</span>
+                  <input
+                    value={selectedSection.backgroundColor ?? "#000000"}
+                    onChange={(event) =>
+                      updateSectionField(selectedIndex, "backgroundColor", event.target.value)
+                    }
+                    placeholder="#000000"
+                    className="w-full rounded-2xl border border-[#9c9c9c]/25 bg-[#FAFDFF] px-4 py-3 outline-none transition focus:border-[#303940]"
+                  />
+                </label>
+                <label className="space-y-2">
+                  <span className="text-sm font-semibold">Text color</span>
+                  <input
+                    value={selectedSection.textColor ?? "#FFFFFF"}
+                    onChange={(event) =>
+                      updateSectionField(selectedIndex, "textColor", event.target.value)
+                    }
+                    placeholder="#FFFFFF"
                     className="w-full rounded-2xl border border-[#9c9c9c]/25 bg-[#FAFDFF] px-4 py-3 outline-none transition focus:border-[#303940]"
                   />
                 </label>

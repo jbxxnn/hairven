@@ -68,48 +68,123 @@ export default async function PricingPage() {
           </a>
         </div>
 
-        <div className="grid gap-4 sm:gap-6 lg:grid-cols-2">
-          {sections.map((section) => (
-            <section
-              key={section.id}
-              id={section.id}
-              className="scroll-mt-24 rounded-[1.5rem] border border-[#9c9c9c]/20 bg-[#FFFFFF] p-5 shadow-[0_24px_80px_-48px_rgba(48,57,64,0.22)] sm:scroll-mt-28 sm:rounded-[2rem] sm:p-8"
-            >
-              <div className="mb-5 space-y-3 sm:mb-6">
-                <p className="text-[11px] uppercase tracking-[0.26em] text-[#9c9c9c] sm:text-xs sm:tracking-[0.3em]">
-                  {section.eyebrow}
-                </p>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold tracking-tight sm:text-2xl">{section.title}</h3>
-                  <p className="max-w-2xl text-sm leading-6 text-[#9c9c9c]">
-                    {section.description}
-                  </p>
-                </div>
-              </div>
+        {(() => {
+          // Group sections into 3 columns to maintain vertical flow control
+          const columns: any[][] = [[], [], []];
+          let footerItem: any = null;
+          let firstSectionColors = { bg: "#000000", text: "#FFFFFF" };
 
-              <div className="space-y-3">
-                {section.items.map((item) => (
-                  <article
-                    key={`${section.id}-${item.name}-${item.price}-${item.note ?? ""}`}
-                    className="rounded-2xl border border-[#9c9c9c]/15 bg-[#FAFDFF] px-4 py-4"
-                  >
-                    <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
-                      <div>
-                        <h4 className="text-base font-semibold text-[#303940]">{item.name}</h4>
-                        {item.note ? (
-                          <p className="mt-1 text-sm leading-6 text-[#9c9c9c]">{item.note}</p>
-                        ) : null}
+          sections.forEach((section, idx) => {
+            if (idx === 0) {
+              firstSectionColors = {
+                bg: section.backgroundColor ?? "#000000",
+                text: section.textColor ?? "#FFFFFF",
+              };
+              if (section.items.length > 0) {
+                const items = [...section.items];
+                footerItem = items.pop();
+                columns[idx % 3].push({ ...section, items });
+              } else {
+                columns[idx % 3].push(section);
+              }
+            } else {
+              columns[idx % 3].push(section);
+            }
+          });
+
+          return (
+            <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+              {columns.map((columnSections, colIdx) => (
+                <div key={colIdx} className="flex flex-col gap-4 sm:gap-6">
+                  {columnSections.map((section) => (
+                    <section
+                      key={section.id}
+                      id={section.id}
+                      className="scroll-mt-24 border-2 border-[#000000] bg-[#FFFFFF] p-0 shadow-[0_24px_80px_-48px_rgba(48,57,64,0.22)] sm:scroll-mt-28"
+                    >
+                      <div
+                        className="mb-5 p-8 space-y-3 sm:mb-6 border-b border-[#000000] border-b-2"
+                        style={{ backgroundColor: section.backgroundColor ?? "#000000" }}
+                      >
+                        <div className="space-y-2">
+                          <h3
+                            className="text-center text-xl font-semibold tracking-tight sm:text-2xl"
+                            style={{ color: section.textColor ?? "#FFFFFF" }}
+                          >
+                            {section.title}
+                          </h3>
+                        </div>
                       </div>
-                      <p className="shrink-0 text-base font-semibold text-[#303940] sm:text-right">
-                        {item.price}
-                      </p>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
+
+                      <div className="space-y-3">
+                        {section.items.map((item: any) => (
+                          <article
+                            key={`${section.id}-${item.name}-${item.price}-${item.note ?? ""}`}
+                            className="px-4 py-1"
+                          >
+                            <div className="flex items-baseline gap-2 sm:gap-4">
+                              <div className="flex flex-1 items-baseline gap-2 min-w-0">
+                                <h4 className="truncate font-helvetica text-base font-medium text-[#000000]">
+                                  {item.name}
+                                </h4>
+                                <div className="hidden flex-1 min-w-[12px] border-b border-dashed border-[#000000]/20 mb-[4px] sm:block" />
+                              </div>
+                              <p className="shrink-0 text-base font-medium text-[#000000] whitespace-nowrap">
+                                {item.price}
+                              </p>
+                            </div>
+                            {item.note ? (
+                              <p className="mt-1 text-sm leading-6 text-[#9c9c9c]">{item.note}</p>
+                            ) : null}
+                          </article>
+                        ))}
+                      </div>
+
+                      {/* Special footer item inside the first section card */}
+                      {section.id === "male" && footerItem && (
+                        <div
+                          className="mt-6 border-t border-[#000000]/10 p-6 pt-5"
+                          style={{ backgroundColor: section.backgroundColor ?? "#000000" }}
+                        >
+                          <div className="space-y-1">
+                        <div className="flex items-baseline gap-2 sm:gap-4">
+                          <div className="flex flex-1 items-baseline gap-2 min-w-0">
+                            <h4
+                              className="truncate font-helvetica text-base font-medium"
+                              style={{ color: section.textColor ?? "#FFFFFF" }}
+                            >
+                              {footerItem.name}
+                            </h4>
+                            <div
+                              className="hidden flex-1 min-w-[12px] border-b border-dashed mb-[4px] opacity-40 sm:block"
+                              style={{ borderColor: section.textColor ?? "#FFFFFF" }}
+                            />
+                          </div>
+                          <p
+                            className="shrink-0 text-base font-medium whitespace-nowrap"
+                            style={{ color: section.textColor ?? "#FFFFFF" }}
+                          >
+                            {footerItem.price}
+                          </p>
+                        </div>
+                            {footerItem.note ? (
+                              <p
+                                className="text-sm leading-6 opacity-80"
+                                style={{ color: section.textColor ?? "#FFFFFF" }}
+                              >
+                                {footerItem.note}
+                              </p>
+                            ) : null}
+                          </div>
+                        </div>
+                      )}
+                    </section>
+                  ))}
+                </div>
+              ))}
+            </div>
+          );
+        })()}
       </section>
     </main>
   );

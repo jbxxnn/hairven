@@ -1,4 +1,5 @@
 import GoogleSignInButton from "@/components/google-sign-in-button";
+import DevLoginButton from "@/components/dev-login-button";
 
 type LoginPageProps = {
   searchParams?: Promise<{
@@ -28,8 +29,9 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
           </p>
         ) : null}
 
-        <div className="mt-8">
+        <div className="mt-8 space-y-4">
           <GoogleSignInButton />
+          {process.env.NODE_ENV === "development" && <DevLoginButton />}
         </div>
       </div>
     </main>

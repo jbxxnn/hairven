@@ -11,17 +11,35 @@
       "eyebrow": "Barbing",
       "description": "Essential cuts, curls, waves, carving, and treatment options for men.",
       "items": [
-        { "name": "Haircut (Adult)", "price": "₦2,500", "note": "Extra ₦500 for PS5" },
-        { "name": "Rough curls", "price": "₦5,000" },
-        { "name": "Sporting waves", "price": "₦20,000" },
-        { "name": "Friction (carving)", "price": "₦1,000" },
-        { "name": "Hair treatment (men)", "price": "₦1,500" },
+        {
+          "name": "Haircut (Adult)",
+          "price": "\u20a62,500",
+          "note": "Extra \u20a6500 for PS5"
+        },
+        {
+          "name": "Rough curls",
+          "price": "\u20a65,000"
+        },
+        {
+          "name": "Sporting waves",
+          "price": "\u20a620,000"
+        },
+        {
+          "name": "Friction (carving)",
+          "price": "\u20a61,000"
+        },
+        {
+          "name": "Hair treatment (men)",
+          "price": "\u20a61,500"
+        },
         {
           "name": "Exclusive men's barbing package",
-          "price": "₦6,000",
+          "price": "\u20a66,000",
           "note": "Barbing, dyeing, washing, hair treatment, complimentary PS5"
         }
-      ]
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "dye",
@@ -29,14 +47,44 @@
       "eyebrow": "Color",
       "description": "Dye options for normal application and full-hair coverage.",
       "items": [
-        { "name": "Black (normal)", "price": "₦1,500", "note": "Full hair: ₦3,000" },
-        { "name": "Gold (normal)", "price": "₦5,000", "note": "Full hair: ₦10,000" },
-        { "name": "Platinum White (normal)", "price": "₦12,000", "note": "Full hair: ₦16,000" },
-        { "name": "Ginger (normal)", "price": "₦12,000", "note": "Full hair: ₦16,000" },
-        { "name": "Honey Brown (normal)", "price": "₦12,000", "note": "Full hair: ₦16,000" },
-        { "name": "Pink (normal)", "price": "₦12,000", "note": "Full hair: ₦16,000" },
-        { "name": "Ruby Red (normal)", "price": "₦12,000", "note": "Full hair: ₦16,000" }
-      ]
+        {
+          "name": "Black (normal)",
+          "price": "\u20a61,500",
+          "note": "Full hair: \u20a63,000"
+        },
+        {
+          "name": "Gold (normal)",
+          "price": "\u20a65,000",
+          "note": "Full hair: \u20a610,000"
+        },
+        {
+          "name": "Platinum White (normal)",
+          "price": "\u20a612,000",
+          "note": "Full hair: \u20a616,000"
+        },
+        {
+          "name": "Ginger (normal)",
+          "price": "\u20a612,000",
+          "note": "Full hair: \u20a616,000"
+        },
+        {
+          "name": "Honey Brown (normal)",
+          "price": "\u20a612,000",
+          "note": "Full hair: \u20a616,000"
+        },
+        {
+          "name": "Pink (normal)",
+          "price": "\u20a612,000",
+          "note": "Full hair: \u20a616,000"
+        },
+        {
+          "name": "Ruby Red (normal)",
+          "price": "\u20a612,000",
+          "note": "Full hair: \u20a616,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "mens-luxury",
@@ -46,15 +94,17 @@
       "items": [
         {
           "name": "Men's luxury package",
-          "price": "₦12,000",
+          "price": "\u20a612,000",
           "note": "Barbing, manicure, pedicure, massage, PS5"
         },
         {
           "name": "Home Service (Haircut only)",
-          "price": "₦5,000",
+          "price": "\u20a65,000",
           "note": "Transportation varies by location"
         }
-      ]
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "kids",
@@ -62,12 +112,30 @@
       "eyebrow": "Kids",
       "description": "Basic salon services for children.",
       "items": [
-        { "name": "Haircut", "price": "₦1,500" },
-        { "name": "Washing & Drying", "price": "₦1,500" },
-        { "name": "Weaving of Hair", "price": "₦1,000" },
-        { "name": "Retouching & Drying", "price": "₦2,500" },
-        { "name": "Braiding With Extension", "price": "₦6,000", "note": "Depending on style" }
-      ]
+        {
+          "name": "Haircut",
+          "price": "\u20a61,500"
+        },
+        {
+          "name": "Washing & Drying",
+          "price": "\u20a61,500"
+        },
+        {
+          "name": "Weaving of Hair",
+          "price": "\u20a61,000"
+        },
+        {
+          "name": "Retouching & Drying",
+          "price": "\u20a62,500"
+        },
+        {
+          "name": "Braiding With Extension",
+          "price": "\u20a66,000",
+          "note": "Depending on style"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "female-styling",
@@ -75,17 +143,51 @@
       "eyebrow": "Female styling",
       "description": "Wigs, steaming, revamping, and styling-focused services.",
       "items": [
-        { "name": "Weaving", "price": "₦1,500" },
-        { "name": "Styling (straight wig)", "price": "₦2,000" },
-        { "name": "Styling (curly wig)", "price": "₦4,000" },
-        { "name": "Treatment and Steaming", "price": "₦6,000" },
-        { "name": "Fixing of Weavon", "price": "₦5,000" },
-        { "name": "Wigging", "price": "₦5,000" },
-        { "name": "Retouching & Setting", "price": "₦4,000" },
-        { "name": "Revamping", "price": "₦6,000" },
-        { "name": "Steaming & Setting", "price": "₦4,500", "note": "Without treatment" },
-        { "name": "Steaming & Stretching", "price": "₦6,000", "note": "Without treatment" }
-      ]
+        {
+          "name": "Weaving",
+          "price": "\u20a61,500"
+        },
+        {
+          "name": "Styling (straight wig)",
+          "price": "\u20a62,000"
+        },
+        {
+          "name": "Styling (curly wig)",
+          "price": "\u20a64,000"
+        },
+        {
+          "name": "Treatment and Steaming",
+          "price": "\u20a66,000"
+        },
+        {
+          "name": "Fixing of Weavon",
+          "price": "\u20a65,000"
+        },
+        {
+          "name": "Wigging",
+          "price": "\u20a65,000"
+        },
+        {
+          "name": "Retouching & Setting",
+          "price": "\u20a64,000"
+        },
+        {
+          "name": "Revamping",
+          "price": "\u20a66,000"
+        },
+        {
+          "name": "Steaming & Setting",
+          "price": "\u20a64,500",
+          "note": "Without treatment"
+        },
+        {
+          "name": "Steaming & Stretching",
+          "price": "\u20a66,000",
+          "note": "Without treatment"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "female-wash",
@@ -93,16 +195,48 @@
       "eyebrow": "Wash and retouch",
       "description": "Wash, drying, stretching, setting, and relaxer-based retouch services.",
       "items": [
-        { "name": "Washing & Drying", "price": "₦2,000" },
-        { "name": "Washing & Stretching", "price": "₦4,000" },
-        { "name": "Washing & Setting", "price": "₦3,000" },
-        { "name": "Washing & Steaming", "price": "₦4,000", "note": "Without treatment" },
-        { "name": "Stretching Of Hair", "price": "₦2,000" },
-        { "name": "Retouching & Drying", "price": "₦3,000" },
-        { "name": "Retouching & Setting", "price": "₦4,500", "note": "With salon relaxer" },
-        { "name": "Retouching & Setting", "price": "₦3,000", "note": "Without salon relaxer" },
-        { "name": "Retouching & Steaming", "price": "₦6,000" }
-      ]
+        {
+          "name": "Washing & Drying",
+          "price": "\u20a62,000"
+        },
+        {
+          "name": "Washing & Stretching",
+          "price": "\u20a64,000"
+        },
+        {
+          "name": "Washing & Setting",
+          "price": "\u20a63,000"
+        },
+        {
+          "name": "Washing & Steaming",
+          "price": "\u20a64,000",
+          "note": "Without treatment"
+        },
+        {
+          "name": "Stretching Of Hair",
+          "price": "\u20a62,000"
+        },
+        {
+          "name": "Retouching & Drying",
+          "price": "\u20a63,000"
+        },
+        {
+          "name": "Retouching & Setting",
+          "price": "\u20a64,500",
+          "note": "With salon relaxer"
+        },
+        {
+          "name": "Retouching & Setting",
+          "price": "\u20a63,000",
+          "note": "Without salon relaxer"
+        },
+        {
+          "name": "Retouching & Steaming",
+          "price": "\u20a66,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "female-weaving",
@@ -110,14 +244,41 @@
       "eyebrow": "Weaving options",
       "description": "Weaving by size plus steaming and Calabar styling.",
       "items": [
-        { "name": "Weaving Of Hair", "price": "₦500", "note": "Big" },
-        { "name": "Weaving Of Hair", "price": "₦1,000", "note": "Medium" },
-        { "name": "Weaving Of Hair", "price": "₦2,000", "note": "Small" },
-        { "name": "Weaving Of Hair", "price": "₦2,000", "note": "Stylish" },
-        { "name": "Steaming & Setting", "price": "₦4,000" },
-        { "name": "Steaming & Stretching", "price": "₦5,000" },
-        { "name": "Calabar Hairstyle", "price": "₦3,000" }
-      ]
+        {
+          "name": "Weaving Of Hair",
+          "price": "\u20a6500",
+          "note": "Big"
+        },
+        {
+          "name": "Weaving Of Hair",
+          "price": "\u20a61,000",
+          "note": "Medium"
+        },
+        {
+          "name": "Weaving Of Hair",
+          "price": "\u20a62,000",
+          "note": "Small"
+        },
+        {
+          "name": "Weaving Of Hair",
+          "price": "\u20a62,000",
+          "note": "Stylish"
+        },
+        {
+          "name": "Steaming & Setting",
+          "price": "\u20a64,000"
+        },
+        {
+          "name": "Steaming & Stretching",
+          "price": "\u20a65,000"
+        },
+        {
+          "name": "Calabar Hairstyle",
+          "price": "\u20a63,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "tribal-braids",
@@ -125,16 +286,45 @@
       "eyebrow": "Braids",
       "description": "Tribal braid pricing by size and hair length.",
       "items": [
-        { "name": "Small - Shoulder", "price": "₦8,000" },
-        { "name": "Small - Waist", "price": "₦10,000" },
-        { "name": "Small - Bum", "price": "₦12,000" },
-        { "name": "Medium - Shoulder", "price": "₦7,000" },
-        { "name": "Medium - Waist", "price": "₦9,000" },
-        { "name": "Medium - Bum", "price": "₦11,000" },
-        { "name": "Large - Shoulder", "price": "₦6,000" },
-        { "name": "Large - Waist", "price": "₦8,000" },
-        { "name": "Large - Bum", "price": "₦10,000" }
-      ]
+        {
+          "name": "Small - Shoulder",
+          "price": "\u20a68,000"
+        },
+        {
+          "name": "Small - Waist",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Small - Bum",
+          "price": "\u20a612,000"
+        },
+        {
+          "name": "Medium - Shoulder",
+          "price": "\u20a67,000"
+        },
+        {
+          "name": "Medium - Waist",
+          "price": "\u20a69,000"
+        },
+        {
+          "name": "Medium - Bum",
+          "price": "\u20a611,000"
+        },
+        {
+          "name": "Large - Shoulder",
+          "price": "\u20a66,000"
+        },
+        {
+          "name": "Large - Waist",
+          "price": "\u20a68,000"
+        },
+        {
+          "name": "Large - Bum",
+          "price": "\u20a610,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "knotless-braids",
@@ -142,16 +332,45 @@
       "eyebrow": "Braids",
       "description": "Knotless braid pricing by size and length.",
       "items": [
-        { "name": "Small - Shoulder", "price": "₦10,000" },
-        { "name": "Small - Waist", "price": "₦12,000" },
-        { "name": "Small - Bum", "price": "₦14,000" },
-        { "name": "Medium - Shoulder", "price": "₦9,000" },
-        { "name": "Medium - Waist", "price": "₦11,000" },
-        { "name": "Medium - Bum", "price": "₦13,000" },
-        { "name": "Large - Shoulder", "price": "₦8,000" },
-        { "name": "Large - Waist", "price": "₦10,000" },
-        { "name": "Large - Bum", "price": "₦12,000" }
-      ]
+        {
+          "name": "Small - Shoulder",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Small - Waist",
+          "price": "\u20a612,000"
+        },
+        {
+          "name": "Small - Bum",
+          "price": "\u20a614,000"
+        },
+        {
+          "name": "Medium - Shoulder",
+          "price": "\u20a69,000"
+        },
+        {
+          "name": "Medium - Waist",
+          "price": "\u20a611,000"
+        },
+        {
+          "name": "Medium - Bum",
+          "price": "\u20a613,000"
+        },
+        {
+          "name": "Large - Shoulder",
+          "price": "\u20a68,000"
+        },
+        {
+          "name": "Large - Waist",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Large - Bum",
+          "price": "\u20a612,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "goddess-braids",
@@ -159,16 +378,45 @@
       "eyebrow": "Braids",
       "description": "Goddess braid pricing by size and length.",
       "items": [
-        { "name": "Small - Shoulder", "price": "₦8,000" },
-        { "name": "Small - Waist", "price": "₦10,000" },
-        { "name": "Small - Bum", "price": "₦12,000" },
-        { "name": "Medium - Shoulder", "price": "₦7,000" },
-        { "name": "Medium - Waist", "price": "₦9,000" },
-        { "name": "Medium - Bum", "price": "₦11,000" },
-        { "name": "Large - Shoulder", "price": "₦6,000" },
-        { "name": "Large - Waist", "price": "₦8,000" },
-        { "name": "Large - Bum", "price": "₦10,000" }
-      ]
+        {
+          "name": "Small - Shoulder",
+          "price": "\u20a68,000"
+        },
+        {
+          "name": "Small - Waist",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Small - Bum",
+          "price": "\u20a612,000"
+        },
+        {
+          "name": "Medium - Shoulder",
+          "price": "\u20a67,000"
+        },
+        {
+          "name": "Medium - Waist",
+          "price": "\u20a69,000"
+        },
+        {
+          "name": "Medium - Bum",
+          "price": "\u20a611,000"
+        },
+        {
+          "name": "Large - Shoulder",
+          "price": "\u20a66,000"
+        },
+        {
+          "name": "Large - Waist",
+          "price": "\u20a68,000"
+        },
+        {
+          "name": "Large - Bum",
+          "price": "\u20a610,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "faux-locs",
@@ -176,11 +424,25 @@
       "eyebrow": "Locs",
       "description": "Faux loc styles and extension-based packet locks.",
       "items": [
-        { "name": "Faux Locs (small)", "price": "₦15,000" },
-        { "name": "Faux Locs (medium)", "price": "₦12,000" },
-        { "name": "Faux Locs (big)", "price": "₦10,000" },
-        { "name": "Packet Locks (extensions)", "price": "₦5,000" }
-      ]
+        {
+          "name": "Faux Locs (small)",
+          "price": "\u20a615,000"
+        },
+        {
+          "name": "Faux Locs (medium)",
+          "price": "\u20a612,000"
+        },
+        {
+          "name": "Faux Locs (big)",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Packet Locks (extensions)",
+          "price": "\u20a65,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "locks",
@@ -188,11 +450,25 @@
       "eyebrow": "Locs",
       "description": "Starter, micro, relocking, and unlocking services.",
       "items": [
-        { "name": "Locks", "price": "₦30,000" },
-        { "name": "Micro Locks", "price": "₦40,000" },
-        { "name": "Unlocking", "price": "₦20,000" },
-        { "name": "Relocking", "price": "₦5,000 - ₦10,000" }
-      ]
+        {
+          "name": "Locks",
+          "price": "\u20a630,000"
+        },
+        {
+          "name": "Micro Locks",
+          "price": "\u20a640,000"
+        },
+        {
+          "name": "Unlocking",
+          "price": "\u20a620,000"
+        },
+        {
+          "name": "Relocking",
+          "price": "\u20a65,000 - \u20a610,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "packing-gel",
@@ -200,9 +476,17 @@
       "eyebrow": "Styling",
       "description": "Regular and stylish gel-based hair packing options.",
       "items": [
-        { "name": "Regular", "price": "₦5,000" },
-        { "name": "Packing Gel (stylish)", "price": "₦8,000" }
-      ]
+        {
+          "name": "Regular",
+          "price": "\u20a65,000"
+        },
+        {
+          "name": "Packing Gel (stylish)",
+          "price": "\u20a68,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "installation",
@@ -210,9 +494,17 @@
       "eyebrow": "Installation",
       "description": "Professional installations for wigs and braids.",
       "items": [
-        { "name": "Wigs", "price": "₦10,000" },
-        { "name": "Braids", "price": "₦8,000" }
-      ]
+        {
+          "name": "Wigs",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Braids",
+          "price": "\u20a68,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "micro-twist",
@@ -220,10 +512,21 @@
       "eyebrow": "Twists",
       "description": "Micro twist pricing by length.",
       "items": [
-        { "name": "Shoulder", "price": "₦10,000" },
-        { "name": "Waist", "price": "₦15,000" },
-        { "name": "Bum", "price": "₦20,000" }
-      ]
+        {
+          "name": "Shoulder",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Waist",
+          "price": "\u20a615,000"
+        },
+        {
+          "name": "Bum",
+          "price": "\u20a620,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "stitch-braids",
@@ -231,16 +534,45 @@
       "eyebrow": "Braids",
       "description": "Stitch braid pricing by size and length.",
       "items": [
-        { "name": "Small size (shoulder)", "price": "₦8,000" },
-        { "name": "Small size (back/waist)", "price": "₦10,000" },
-        { "name": "Small size (bum)", "price": "₦12,000" },
-        { "name": "Medium size (shoulder)", "price": "₦7,000" },
-        { "name": "Medium size (back/waist)", "price": "₦9,000" },
-        { "name": "Medium size (bum)", "price": "₦11,000" },
-        { "name": "Big size (shoulder)", "price": "₦6,000" },
-        { "name": "Big size (back/waist)", "price": "₦8,000" },
-        { "name": "Big size (bum)", "price": "₦10,000" }
-      ]
+        {
+          "name": "Small size (shoulder)",
+          "price": "\u20a68,000"
+        },
+        {
+          "name": "Small size (back/waist)",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Small size (bum)",
+          "price": "\u20a612,000"
+        },
+        {
+          "name": "Medium size (shoulder)",
+          "price": "\u20a67,000"
+        },
+        {
+          "name": "Medium size (back/waist)",
+          "price": "\u20a69,000"
+        },
+        {
+          "name": "Medium size (bum)",
+          "price": "\u20a611,000"
+        },
+        {
+          "name": "Big size (shoulder)",
+          "price": "\u20a66,000"
+        },
+        {
+          "name": "Big size (back/waist)",
+          "price": "\u20a68,000"
+        },
+        {
+          "name": "Big size (bum)",
+          "price": "\u20a610,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "ghana-weaving",
@@ -248,16 +580,45 @@
       "eyebrow": "Braids",
       "description": "Shuku Ghana weaving priced by size and length.",
       "items": [
-        { "name": "Shuku - small size (shoulder)", "price": "₦10,000" },
-        { "name": "Shuku - small size (back/waist)", "price": "₦12,000" },
-        { "name": "Shuku - small size (bum)", "price": "₦14,000" },
-        { "name": "Shuku - medium size (shoulder)", "price": "₦9,000" },
-        { "name": "Shuku - medium size (back/waist)", "price": "₦11,000" },
-        { "name": "Shuku - medium size (bum)", "price": "₦13,000" },
-        { "name": "Shuku - big size (shoulder)", "price": "₦8,000" },
-        { "name": "Shuku - big size (back/waist)", "price": "₦10,000" },
-        { "name": "Shuku - big size (bum)", "price": "₦12,000" }
-      ]
+        {
+          "name": "Shuku - small size (shoulder)",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Shuku - small size (back/waist)",
+          "price": "\u20a612,000"
+        },
+        {
+          "name": "Shuku - small size (bum)",
+          "price": "\u20a614,000"
+        },
+        {
+          "name": "Shuku - medium size (shoulder)",
+          "price": "\u20a69,000"
+        },
+        {
+          "name": "Shuku - medium size (back/waist)",
+          "price": "\u20a611,000"
+        },
+        {
+          "name": "Shuku - medium size (bum)",
+          "price": "\u20a613,000"
+        },
+        {
+          "name": "Shuku - big size (shoulder)",
+          "price": "\u20a68,000"
+        },
+        {
+          "name": "Shuku - big size (back/waist)",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Shuku - big size (bum)",
+          "price": "\u20a612,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "butterfly-locks",
@@ -265,10 +626,21 @@
       "eyebrow": "Locs",
       "description": "Butterfly lock pricing by length.",
       "items": [
-        { "name": "Shoulder", "price": "₦7,000" },
-        { "name": "Waist", "price": "₦9,000" },
-        { "name": "Bum", "price": "₦12,000" }
-      ]
+        {
+          "name": "Shoulder",
+          "price": "\u20a67,000"
+        },
+        {
+          "name": "Waist",
+          "price": "\u20a69,000"
+        },
+        {
+          "name": "Bum",
+          "price": "\u20a612,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "ventilation",
@@ -276,13 +648,33 @@
       "eyebrow": "Ventilation",
       "description": "Ventilation and lace work across closure and frontal types.",
       "items": [
-        { "name": "Kimkay Closure", "price": "₦5,000" },
-        { "name": "4 by 4 Closure", "price": "₦8,000" },
-        { "name": "5 by 5 Closure", "price": "₦10,000" },
-        { "name": "Frontal", "price": "₦15,000" },
-        { "name": "Full Lace", "price": "₦20,000" },
-        { "name": "Refilling", "price": "₦5,000 upwards" }
-      ]
+        {
+          "name": "Kimkay Closure",
+          "price": "\u20a65,000"
+        },
+        {
+          "name": "4 by 4 Closure",
+          "price": "\u20a68,000"
+        },
+        {
+          "name": "5 by 5 Closure",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Frontal",
+          "price": "\u20a615,000"
+        },
+        {
+          "name": "Full Lace",
+          "price": "\u20a620,000"
+        },
+        {
+          "name": "Refilling",
+          "price": "\u20a65,000 upwards"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "pedicure-manicure",
@@ -290,9 +682,17 @@
       "eyebrow": "Hands and feet",
       "description": "Core manicure and pedicure services.",
       "items": [
-        { "name": "Manicure", "price": "₦3,000" },
-        { "name": "Pedicure", "price": "₦7,000" }
-      ]
+        {
+          "name": "Manicure",
+          "price": "\u20a63,000"
+        },
+        {
+          "name": "Pedicure",
+          "price": "\u20a67,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "nails-acrylic",
@@ -300,12 +700,29 @@
       "eyebrow": "Nails",
       "description": "Acrylic sets, overlay work, and toes.",
       "items": [
-        { "name": "Full set short acrylic", "price": "₦6,000" },
-        { "name": "Full set medium acrylic", "price": "₦8,000" },
-        { "name": "Full set long", "price": "₦10,000" },
-        { "name": "Acrylic overlay natural nails", "price": "₦3,000" },
-        { "name": "Toes", "price": "₦5,000" }
-      ]
+        {
+          "name": "Full set short acrylic",
+          "price": "\u20a66,000"
+        },
+        {
+          "name": "Full set medium acrylic",
+          "price": "\u20a68,000"
+        },
+        {
+          "name": "Full set long",
+          "price": "\u20a610,000"
+        },
+        {
+          "name": "Acrylic overlay natural nails",
+          "price": "\u20a63,000"
+        },
+        {
+          "name": "Toes",
+          "price": "\u20a65,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "nails-gel",
@@ -313,12 +730,29 @@
       "eyebrow": "Nails",
       "description": "Gel polish pricing by length and natural-nail overlay.",
       "items": [
-        { "name": "Gel nails short", "price": "₦4,000" },
-        { "name": "Gel nails medium", "price": "₦5,000" },
-        { "name": "Gel nails long", "price": "₦6,000" },
-        { "name": "Gel nails (toe)", "price": "₦3,000" },
-        { "name": "Overlay on natural nails", "price": "₦2,000" }
-      ]
+        {
+          "name": "Gel nails short",
+          "price": "\u20a64,000"
+        },
+        {
+          "name": "Gel nails medium",
+          "price": "\u20a65,000"
+        },
+        {
+          "name": "Gel nails long",
+          "price": "\u20a66,000"
+        },
+        {
+          "name": "Gel nails (toe)",
+          "price": "\u20a63,000"
+        },
+        {
+          "name": "Overlay on natural nails",
+          "price": "\u20a62,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "nails-design",
@@ -326,13 +760,33 @@
       "eyebrow": "Nails",
       "description": "Add-on nail art pricing per effect or finger.",
       "items": [
-        { "name": "Chrome per finger", "price": "₦500" },
-        { "name": "Stickers", "price": "₦500" },
-        { "name": "Glitters", "price": "₦500" },
-        { "name": "Stones", "price": "₦500" },
-        { "name": "3D flowers", "price": "₦1,000" },
-        { "name": "Glow in the dark", "price": "₦1,000" }
-      ]
+        {
+          "name": "Chrome per finger",
+          "price": "\u20a6500"
+        },
+        {
+          "name": "Stickers",
+          "price": "\u20a6500"
+        },
+        {
+          "name": "Glitters",
+          "price": "\u20a6500"
+        },
+        {
+          "name": "Stones",
+          "price": "\u20a6500"
+        },
+        {
+          "name": "3D flowers",
+          "price": "\u20a61,000"
+        },
+        {
+          "name": "Glow in the dark",
+          "price": "\u20a61,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     },
     {
       "id": "nails-polish",
@@ -340,13 +794,33 @@
       "eyebrow": "Nails",
       "description": "Natural polish and fixing services for hands, legs, and both.",
       "items": [
-        { "name": "Natural hand", "price": "₦1,000" },
-        { "name": "Natural legs", "price": "₦1,000" },
-        { "name": "Natural H&L", "price": "₦2,000" },
-        { "name": "Fixing Hand", "price": "₦2,000" },
-        { "name": "Fixing leg", "price": "₦2,000" },
-        { "name": "Fixing hand & leg", "price": "₦3,000" }
-      ]
+        {
+          "name": "Natural hand",
+          "price": "\u20a61,000"
+        },
+        {
+          "name": "Natural legs",
+          "price": "\u20a61,000"
+        },
+        {
+          "name": "Natural H&L",
+          "price": "\u20a62,000"
+        },
+        {
+          "name": "Fixing Hand",
+          "price": "\u20a62,000"
+        },
+        {
+          "name": "Fixing leg",
+          "price": "\u20a62,000"
+        },
+        {
+          "name": "Fixing hand & leg",
+          "price": "\u20a63,000"
+        }
+      ],
+      "backgroundColor": "#000000",
+      "textColor": "#FFFFFF"
     }
   ]
 }
