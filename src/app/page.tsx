@@ -330,7 +330,7 @@ export default function Home() {
           </div>
 
           <div className="mt-14 border-t border-white/10 pt-6 text-sm text-[#FAFDFF]/60">
-            © Hairven Salon 2024. All rights reserved.
+            © Hairven Salon 2026. All rights reserved.
           </div>
         </div>
       </footer>
