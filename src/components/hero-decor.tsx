@@ -38,7 +38,7 @@ export function HeroDecor() {
       </div>
 
       {/* Center Bottom (Partially cut/bleeding into pricing) */}
-      <div className="absolute -bottom-32 left-1/4 rotate-[110deg] scale-[1.5] opacity-100">
+      <div className="absolute -bottom-20 left-1/4 rotate-[110deg] scale-[1.2] opacity-100">
         <SvgPath />
       </div>
 
