@@ -121,7 +121,7 @@ giving you the maximum satisfaction you deserve.
                                 <h4 className="truncate font-helvetica text-base font-medium text-[#000000]">
                                   {item.name}
                                 </h4>
-                                <div className="hidden flex-1 min-w-[12px] border-b border-dashed border-[#000000]/20 mb-[4px]" />
+                                <div className="flex-1 min-w-[12px] border-b border-dashed border-[#000000]/20 mb-[4px]" />
                               </div>
                               <p className="shrink-0 text-base font-medium text-[#000000] whitespace-nowrap">
                                 {item.price}
