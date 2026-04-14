@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Marquee } from "@/components/marquee";
+
 
 const arrivals = [
   { name: "Piano Bob Wig", price: "₦40,000.00", image: "/home-arrival-1.jpg" },
@@ -75,9 +77,20 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[linear-gradient(180deg,#FFE5FF_0%,#FAFDFF_38%,#FFFFFF_100%)] text-[#303940]">
       <section className="relative isolate overflow-hidden border-b border-[#9c9c9c]/25 bg-[#303940] text-[#FAFDFF]">
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/DSC08825-scaled.webp"
+            alt="Hairven Salon Interior"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-[#303940]/65" />
+        </div>
+        <Marquee />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#FFE5FF33,transparent_28%),radial-gradient(circle_at_80%_20%,#FFFFFF22,transparent_24%)]" />
-        <div className="relative mx-auto max-w-7xl px-4 py-5 sm:px-8 sm:py-8 lg:px-12">
-          <nav className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+        <div className="relative mx-auto w-full px-4 sm:px-8 lg:px-12 bg-[#303940]">
+          <nav className="flex items-center justify-between py-2 sm:py-2">
             <a href="/" className="inline-flex items-center">
               <Image
                 src="/hairven.png"
@@ -85,10 +98,10 @@ export default function Home() {
                 width={140}
                 height={48}
                 priority
-                className="h-9 w-auto object-contain sm:h-10"
+                className="h-8 w-auto object-contain sm:h-10"
               />
             </a>
-            <div className="flex items-center justify-between gap-4 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-[#FAFDFF]/80 sm:justify-end sm:rounded-none sm:border-0 sm:bg-transparent sm:px-0 sm:py-0">
+            <div className="flex items-center gap-6 text-sm font-medium text-[#FAFDFF]/90">
               <a href="/pricing" className="transition hover:text-[#FFE5FF]">
                 Pricing
               </a>
@@ -147,15 +160,25 @@ export default function Home() {
               </p>
             </div>
             <div className="rounded-[1.75rem] border border-white/10 bg-[#FAFDFF] p-5 text-[#303940] shadow-[0_24px_80px_-48px_rgba(0,0,0,0.45)] sm:rounded-[2rem] sm:p-6">
-              <p className="text-xs uppercase tracking-[0.3em] text-[#9c9c9c]">Featured Services</p>
-              <div className="mt-4 space-y-3">
-                {["Barbing", "Braiding", "Massage", "Nail Care"].map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center justify-between rounded-2xl border border-[#9c9c9c]/15 bg-white px-4 py-3"
-                  >
-                    <span className="text-sm font-medium sm:text-base">{item}</span>
-                    <span className="text-xs text-[#9c9c9c] sm:text-sm">Learn more</span>
+              <p className="text-xs uppercase tracking-[0.3em] text-[#9c9c9c]">Service Gallery</p>
+              <div className="mt-4 grid grid-cols-2 gap-3">
+                {[
+                  { name: "Barbing", img: "/slide22-1.webp" },
+                  { name: "Braiding", img: "/salon-1.webp" },
+                ].map((service) => (
+                  <div key={service.name} className="group relative aspect-square overflow-hidden rounded-2xl bg-gray-100 shadow-sm transition hover:shadow-md">
+                    <Image
+                      src={service.img}
+                      alt={service.name}
+                      fill
+                      className="object-cover transition duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute inset-x-0 bottom-0 p-2 sm:p-3">
+                      <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white">
+                        {service.name}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>
