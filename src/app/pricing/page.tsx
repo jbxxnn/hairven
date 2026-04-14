@@ -34,7 +34,7 @@ giving you the maximum satisfaction you deserve.
 
       <section className="sticky top-0 z-20 border-b border-[#9c9c9c]/25 bg-[#FFFFFF]/90 backdrop-blur">
         <div className="mx-auto max-w-7xl px-4 py-3 sm:px-8 sm:py-4 lg:px-12">
-          <div className="flex gap-2 overflow-x-auto pb-1 sm:gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {sections.map((section) => (
               <a
                 key={section.id}
@@ -50,12 +50,12 @@ giving you the maximum satisfaction you deserve.
 
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-16">
         <div className="mb-8 flex flex-col gap-4 lg:mb-10 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-2xl">
+          {/* <div className="max-w-2xl">
             <p className="text-xs uppercase tracking-[0.26em] text-[#9c9c9c] sm:text-sm sm:tracking-[0.3em]">Service Menu</p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl lg:text-4xl">
               Full pricing across salon, braid, wig, and nail services.
             </h2>
-          </div>
+          </div> */}
           <a
             href="https://wa.link/57ecax"
             target="_blank"
