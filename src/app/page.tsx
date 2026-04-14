@@ -17,29 +17,35 @@ const services = [
     title: "Barbing",
     summary:
       "For the discerning gentleman, our barbing services are tailored to provide a grooming experience that goes beyond the ordinary.",
+      image: "/slide22-1.webp",
   },
   {
     title: "Braiding",
+    image: "/salon-1.webp",
     summary:
       "Transform your look with our expert braiding services. Our skilled stylists create intricate and stylish braided hairstyles that suit your personality.",
   },
   {
     title: "Classic Mani-Pedi",
+    image: "/pedicure-1.webp",
     summary:
       "Treat your hands and feet to the care they deserve with our classic manicure and pedicure services.",
   },
   {
     title: "Hair Washing & Installation",
+    image: "/wash-hair.webp",
     summary:
       "Deep cleanse wash and blow-dry, extension installation, wig fitting, and styling in one polished appointment flow.",
   },
   {
     title: "Massage",
+    image: "/massage.jpg",
     summary:
       "Swedish massage, deep tissue massage, and hot stone therapy designed to help you reset and recharge.",
   },
   {
     title: "Nail Care",
+    image: "/nail-care.jpg",
     summary:
       "Basic manicure, gel nail application, and nail art design delivered with precision and care.",
   },
@@ -188,28 +194,20 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-8 sm:py-16 lg:px-12">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+        <div className="flex flex-col gap-4 flex-row items-center justify-center">
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-[#9c9c9c] sm:text-sm sm:tracking-[0.35em]">Discover Our</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+            <p className="text-xs text-center uppercase tracking-[0.3em] text-[#9c9c9c] sm:text-sm sm:tracking-[0.35em]">Discover Our</p>
+            <h2 className="mt-3 text-3xl text-center font-semibold tracking-tight sm:text-4xl lg:text-5xl">
               Newest Arrivals
             </h2>
           </div>
-          <a
-            href="https://hairvenunisexsalon.com/shop/"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex w-full items-center justify-center rounded-full border border-[#9c9c9c]/30 bg-[#FFFFFF] px-5 py-3 text-sm font-semibold transition hover:bg-[#FFE5FF] sm:w-fit"
-          >
-            Shop All Products
-          </a>
         </div>
 
         <div className="mt-8 grid gap-5 md:grid-cols-3 md:gap-6">
           {arrivals.map((item) => (
             <article
               key={item.name}
-              className="group overflow-hidden rounded-[1.75rem] border border-[#9c9c9c]/20 bg-[#FFFFFF] shadow-[0_24px_80px_-48px_rgba(48,57,64,0.22)] sm:rounded-[2rem]"
+              className="group overflow-hidden rounded-[0.75rem] border border-[#9c9c9c]/20 bg-[#FFFFFF] shadow-[0_24px_80px_-48px_rgba(48,57,64,0.22)]"
             >
               <div className="relative h-64 overflow-hidden bg-[#FAFDFF] sm:h-72">
                 <Image
@@ -241,12 +239,12 @@ export default function Home() {
 
       <section className="border-y border-[#9c9c9c]/20 bg-[#FAFDFF]">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-8 sm:py-16 lg:px-12">
-          <div className="max-w-3xl">
-            <p className="text-xs uppercase tracking-[0.3em] text-[#9c9c9c] sm:text-sm sm:tracking-[0.35em]">Services We Offer</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-xs text-center uppercase tracking-[0.3em] text-[#9c9c9c] sm:text-sm sm:tracking-[0.35em]">Services We Offer</p>
+            <h2 className="mt-3 text-3xl text-center font-semibold tracking-tight sm:text-4xl lg:text-5xl">
               Beauty services designed to make you look and feel fantastic.
             </h2>
-            <p className="mt-5 text-sm leading-7 text-[#303940]/70 sm:text-base sm:leading-8">
+            <p className="mt-5 text-sm text-center leading-7 text-[#303940]/70 sm:text-base sm:leading-8">
               From chic haircuts and vibrant coloring to rejuvenating beauty treatments,
               Hairven offers a broad service menu for clients who want polish, comfort,
               and consistency.
@@ -257,17 +255,20 @@ export default function Home() {
             {services.map((service) => (
               <article
                 key={service.title}
-                className="rounded-[1.75rem] border border-[#9c9c9c]/15 bg-[#FFFFFF] p-5 shadow-[0_24px_80px_-48px_rgba(48,57,64,0.18)] sm:rounded-[2rem] sm:p-6"
+                className="rounded-[0.75rem] border border-[#9c9c9c]/15 bg-[#FFFFFF] shadow-[0_24px_80px_-48px_rgba(48,57,64,0.18)]"
               >
-                <p className="text-xs uppercase tracking-[0.3em] text-[#9c9c9c]">Service</p>
-                <h3 className="mt-4 text-xl font-semibold tracking-tight sm:text-2xl">{service.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-[#303940]/72">{service.summary}</p>
+                <img src={service.image} alt={service.title} className="w-full h-64 object-cover rounded-[0.75rem] rounded-b-none" />
+                {/* <p className="text-xs uppercase tracking-[0.3em] text-[#9c9c9c]">Service</p> */}
+                <h3 className="mt-4 px-4 text-xl font-semibold tracking-tight sm:text-2xl">{service.title}</h3>
+                <p className="mt-4 px-4 text-sm leading-7 text-[#303940]/72">{service.summary}</p>
+                <div className="px-4 mb-4">
                 <a
                   href="/pricing"
-                  className="mt-6 inline-flex items-center rounded-full border border-[#9c9c9c]/25 px-4 py-2 text-sm font-semibold transition hover:bg-[#FFE5FF]"
+                  className="mt-4 inline-flex items-center rounded-full border border-[#9c9c9c]/25 px-4 py-2 text-sm font-semibold transition bg-[#FFE5FF]"
                 >
                   Learn More
                 </a>
+                </div>
               </article>
             ))}
           </div>
