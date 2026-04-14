@@ -23,7 +23,7 @@ export default async function PricingPage() {
             {/* <h1 className="text-lg font-normal italic text-center tracking-tight mb-8">
               Know what you need?.
             </h1> */}
-            <p className="text-5xl mt-2 uppercase text-center tracking-[0.3em] text-[#FFE5FF] sm:tracking-[0.35em]">Pricing Plans</p>
+            <p className="text-3xl sm:text-5xl mt-2 uppercase text-center tracking-[0.3em] text-[#FFE5FF] sm:tracking-[0.35em]">Pricing Plans</p>
             <p className="max-w-2xl text-sm leading-7 text-center text-[#FAFDFF]/78 sm:text-base lg:text-lg">
               Simplicity is at the heart of our business - every plan is set up to fit your need and budget
 giving you the maximum satisfaction you deserve.
