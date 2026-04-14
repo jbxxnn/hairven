@@ -32,7 +32,7 @@ giving you the maximum satisfaction you deserve.
         </div>
       </section>
 
-      <section className="sticky top-0 z-20 border-b border-[#9c9c9c]/25 bg-[#FFFFFF]/90 backdrop-blur">
+      <section className="border-b border-[#9c9c9c]/25 bg-[#FFFFFF]/90 backdrop-blur">
         <div className="mx-auto max-w-7xl px-4 py-3 sm:px-8 sm:py-4 lg:px-12">
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {sections.map((section) => (
