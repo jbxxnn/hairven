@@ -1,5 +1,4 @@
-import GoogleSignInButton from "@/components/google-sign-in-button";
-import DevLoginButton from "@/components/dev-login-button";
+import { loginAdmin } from "./actions";
 
 type LoginPageProps = {
   searchParams?: Promise<{
@@ -19,20 +18,41 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
           Sign in to manage the pricing sheet.
         </h1>
         <p className="mt-4 text-base leading-7 text-[#303940]/75">
-          Only approved Google accounts listed in `ADMIN_EMAILS` can open the pricing
-          manager or save updates to Google Sheets.
+          Enter the admin password to open the pricing manager or save updates to
+          Google Sheets.
         </p>
 
-        {error === "AccessDenied" ? (
+        {error === "invalid" ? (
           <p className="mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-            This Google account is not on the admin allowlist.
+            The password is incorrect.
           </p>
         ) : null}
 
-        <div className="mt-8 space-y-4">
-          <GoogleSignInButton />
-          {process.env.NODE_ENV === "development" && <DevLoginButton />}
-        </div>
+        {error === "not-configured" ? (
+          <p className="mt-5 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+            Admin login is not configured. Set `ADMIN_PASSWORD` and
+            `ADMIN_SESSION_SECRET` in the environment.
+          </p>
+        ) : null}
+
+        <form action={loginAdmin} className="mt-8 space-y-4">
+          <label className="block space-y-2">
+            <span className="text-sm font-semibold">Admin password</span>
+            <input
+              name="password"
+              type="password"
+              required
+              autoComplete="current-password"
+              className="w-full rounded-2xl border border-[#9c9c9c]/25 bg-[#FAFDFF] px-4 py-3 outline-none transition focus:border-[#303940]"
+            />
+          </label>
+          <button
+            type="submit"
+            className="inline-flex w-full items-center justify-center rounded-full bg-[#303940] px-6 py-3 text-sm font-semibold text-[#FAFDFF] transition hover:bg-[#9c9c9c] hover:text-[#303940]"
+          >
+            Continue
+          </button>
+        </form>
       </div>
     </main>
   );
